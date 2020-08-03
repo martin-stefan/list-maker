@@ -1,0 +1,105 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 62.5%;
+
+  background-color: rgba(194, 164, 164, 0.5);
+  height: 100vh;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  background-image: linear-gradient(to right bottom, rgba(236, 227, 227, 0.2), rgba(128, 57, 57, 0.7)), url("header.jpg");
+  height: 250px;
+  color: white;
+}
+
+.header__main {
+  font-size: 60px;
+  margin-top: 0;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.header__sub {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 60px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.form {
+  height: 35vh;
+  width: 80%;
+  margin: 6rem auto;
+  background-color: rgba(133, 116, 116, 0.5);
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 10px rgba(134, 121, 121, 0.9);
+}
+
+.input {
+  height: 100%;
+  width: 70%;
+  margin: 3rem auto;
+  border: solid;
+}
+
+.input__text {
+  height: 2rem;
+  width: 60%;
+  margin: .2rem auto;
+}
+
+.input__text:focus {
+  outline: none;
+}
+
+.input__select {
+  font-size: 1.5rem;
+}
+
+.input__textArea {
+
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
