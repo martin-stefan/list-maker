@@ -7,10 +7,12 @@ html, body {
 
   background-color: rgba(194, 164, 164, 0.5);
   height: 100vh;
+  font-family: 'Raleway', sans-serif;
+
+ 
 }
 
 .header {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 30px;
   background-image: linear-gradient(to right bottom, rgba(236, 227, 227, 0.2), rgba(128, 57, 57, 0.7)), url("header.jpg");
@@ -39,37 +41,67 @@ html, body {
 }
 
 .form {
-  height: 35vh;
+  height: 375px;
   width: 80%;
-  margin: 6rem auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 8rem auto;
   background-color: rgba(133, 116, 116, 0.5);
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 1rem 1rem 10px rgba(134, 121, 121, 0.9);
+  position: absolute;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
 }
 
 .input {
   height: 100%;
   width: 70%;
-  margin: 3rem auto;
-  border: solid;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+
+  
+}
+
+.input > *:focus {
+  outline: none;
+}
+
+.input > * {
+  background-color: rgb(156, 114, 125);
+  width: 60%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+.input > *::placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .input__text {
-  height: 2rem;
+  height: 3rem;
   width: 60%;
-  margin: .2rem auto;
-}
-
-.input__text:focus {
-  outline: none;
+  margin-top: 2rem;
 }
 
 .input__select {
   font-size: 1.5rem;
+  margin: 1.5rem auto;
+  color: white;
+  font-weight: 500;
+  width: 200px;
+  padding: .7rem 0;
 }
 
-.input__textArea {
 
+.input__textArea {
+  
 }
 
 @keyframes moveInLeft {
