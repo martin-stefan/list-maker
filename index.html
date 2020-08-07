@@ -11,48 +11,58 @@
 </head>
 <body>
 
-  <div>
 
-    <header class= "header">
-      <h3 class="header__sub">Create your own</h3>
-      <h1 class="header__main">Anime list</h1>
-    </header>
-  </div>
+  <header class= "header">
+    <h3 class="header__sub">Create your own</h3>
+    <h1 class="header__main">Anime list</h1>
+  </header>
 
-  <div class="mainContent">
+  <main>
     <div class="form">
-      <div class="input">
-  
-        <input type="text" placeholder="Add title" class="input__text" id="initial">
-        
-        <br>
-  
-        <input type="text" placeholder="Link an image" class="input__text">
-  
-        <br>
-  
-        <div class="input__select">
-          <label for="rating">Add your rating
-            <select name="rating">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-            </select>
-          </label>
+      <div class="form__box">
+        <div class="input">
+    
+          <input type="text" placeholder="Add title" class="input__text" id="initial">
+          
+          <br>
+    
+          <input type="text" placeholder="Link an image" class="input__text">
+    
+          <br>
+    
+          <div class="input__select">
+            <label for="rating">Add your rating
+              <select name="rating">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </label>
+          </div>
+          <br>
+          <textarea name="review"  cols="30" rows="10" class="input__textArea" placeholder="Add your review here"></textarea>
         </div>
-        <br>
-        <textarea name="review"  cols="30" rows="10" class="input__textArea" placeholder="Add your review here"></textarea>
       </div>
     </div>
 
-  </div>
+    <div class="list">
+      <ul>
+        <ol>
+          <div class="list__item">
+
+          </div>
+        </ol>
+      </ul>
+    </div>
+
+  </main>
 
 
 

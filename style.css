@@ -40,7 +40,16 @@ html, body {
   animation-timing-function: ease-out;
 }
 
+.mainContent {
+  padding-top: 4rem;
+}
+
 .form {
+  display: flex;
+  align-items: center;
+}
+
+.form__box {
   height: 375px;
   width: 80%;
   top: 50%;
@@ -88,6 +97,7 @@ html, body {
   height: 3rem;
   width: 60%;
   margin-top: 2rem;
+  padding-left: 1rem;
 }
 
 .input__select {
@@ -101,7 +111,8 @@ html, body {
 
 
 .input__textArea {
-  
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 @keyframes moveInLeft {
